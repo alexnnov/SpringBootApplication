@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Result of submission</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<h1>User Information</h1>
+
+<!--<table>
+    <forEach var="user" items="${userList}">
+        <tr>
+            <td>${user}</td>
+            <td></td>
+        </tr>
+    </forEach>
+</table>-->
+
+
+<p th:text="'id: ' + ${user.id}"/>
+<p th:text="'first name: ' + ${user.firstName}"/>
+<p th:text="'second name: ' + ${user.secondName}"/>
+<p th:text="'last name: ' + ${user.lastName}"/>
+<p th:text="'age: ' + ${user.age}"/>
+<p th:text="'salary: ' + ${user.salary}"/>
+<p th:text="'email: ' + ${user.email}"/>
+<p th:text="'department: ' + ${user.department}"/>
+
+
+
+<a href="/user">Submit another user</a>
+<a href="/search">Search user</a>
+<a href="/result">Result</a>
+<a href="/sendSimpleEmail">Send email</a>
+
+</body>
+</html>

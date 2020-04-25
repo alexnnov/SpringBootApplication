@@ -1,0 +1,1 @@
+User{id=1, firstName='alex', secondName='ivanovich', lastName='ivanov', age=7, salary=3000, email='vghhjm@mail.ru', department='sales'}
